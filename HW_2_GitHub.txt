@@ -101,11 +101,11 @@ git push
 $ cat > preferences.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences>
-<favorite_movie>none</favorite_movie>
-<favorite_serial>long way to home</favorite_movie>
-<favorite_food>pasta</favorite_food>
-<favorite_time_in_year>srping</favorite_time_in_year>
-<country>Ukraine</country>
+    <favorite_movie>none</favorite_movie>
+    <favorite_serial>long way to home</favorite_serial>
+    <favorite_food>pasta</favorite_food>
+     <favorite_time_in_year>srping</favorite_time_in_year>
+    <country>Ukraine</country>
 </preferences>
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
 cat > skills.xml
@@ -194,5 +194,7 @@ $ git push
 + https://prnt.sc/26dobkf
  18. Синхронизировать внешний и локальный репозиторий TXT
 $ git pull https://github.com/VKoltsova/TXT.git
+
+hi
 
 
