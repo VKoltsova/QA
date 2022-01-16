@@ -33,7 +33,7 @@ $ cat > new.json
 "surname": "Taratuta",
 "years": "21",
 "animals": "0",
-"salary: "1500"}
+"salary": "1500"}
  11. Отправить изменения на внешний репозиторий.
 git add new.json
 git commit -m "add info in new.json file"
@@ -64,7 +64,7 @@ $ git push
  18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. + https://prnt.sc/26dcb3l.
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. + https://prnt.sc/26dcbj7.
  20. Синхронизировать внешний и локальный репозиторий JSON
-=== $ git clone https://github.com/VKoltsova/JSON/
+=== $ git pull https://github.com/VKoltsova/JSON/
 
 
 XML
@@ -83,6 +83,7 @@ $ git push
  27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать
  в формате XML.
 $ cat > new.xml
+<?xml version="1.0" encoding="UTF-8"?>
 <about>
         <name>Vika</name>
         <surname>Taratuta</surname>
@@ -98,6 +99,7 @@ git push
  30. В файл preferences.xml добавить информацию о своих предпочтениях 
 (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
 $ cat > preferences.xml
+<?xml version="1.0" encoding="UTF-8"?>
 <preferences>
 <favorite_movie>none</favorite_movie>
 <favorite_serial>long way to home</favorite_movie>
@@ -107,6 +109,7 @@ $ cat > preferences.xml
 </preferences>
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
 cat > skills.xml
+<?xml version="1.0" encoding="UTF-8"?>
 <skills>
 <a>theory</a>
 <b>client-server</b>
@@ -127,7 +130,7 @@ $ git push
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.  + https://prnt.sc/26dntp7.
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе. + https://prnt.sc/26do1fp
  38. Синхронизировать внешний и локальный репозиторий XML
-$ git clone "https://github.com/VKoltsova/XML.git"
+$ git pull "https://github.com/VKoltsova/XML.git"
 
 TXT
  1. Создать внешний репозиторий c названием TXT.
@@ -179,9 +182,9 @@ Python
 ...
 ...
  12. Сделать коммит в одну строку.
- 13. Отправить сразу 2 файла на внешний репозиторий.
 $ git add .
 $ git commit -am "new info in references.txt and skills.txt"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
 $ git push
  14. На веб интерфейсе создать файл bug_report.txt.
  15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
@@ -190,4 +193,6 @@ $ git push
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
 + https://prnt.sc/26dobkf
  18. Синхронизировать внешний и локальный репозиторий TXT
-$ git clone https://github.com/VKoltsova/TXT.git
+$ git pull https://github.com/VKoltsova/TXT.git
+
+
