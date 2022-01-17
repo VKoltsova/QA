@@ -3,7 +3,7 @@ GitHub. HW_2
 - Postman
 - Jmeter
 - CheckLists
-- Bag Reports
+- Bug Reports
 - SQL
 - Charles
 - Mobile testing
@@ -12,20 +12,20 @@ GitHub. HW_2
 $ git branch Postman
 $ git branch Jmeter
 $ git branch CheckLists
-$ git branch Bag_Reports (с пробелом нельзя)
+$ git branch Bug_Reports (с пробелом нельзя)
 $ git branch SQL
 $ git branch Charles
 $ git branch Mobile_testing (с пробелом нельзя)
 
 2. Запушить все ветки на внешний репозиторий
 ===
-$ git push --all
+$ git push -u origin Postman Jmeter CheckLists Bug_Reports SQL Charles Mobile_testing
 
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
 ===
-$ git checkout Bag_Reports
-touch bag_report.txt
-vim bag_report.txt
+$ git checkout Bug_Reports
+touch bug_report.txt
+vim bug_report.txt
 Project
 ID
 Issure type
@@ -45,20 +45,16 @@ Sprint
 (ctrl+c, :wq)
 4. Запушить структуру багрепорта на внешний репозиторий
 ===
-$git add bag_report.txt
-$git commit -am "new structure"
-$ git push -u origin Bag_Reports
+$ git add bug_report.txt
+$ git commit -m "new file"
+$ git push
 
 5. Вмержить ветку Bag Reports в Main
 ===
-$ git merge main
-(но новые файлы из ветки "Bag Reports" не добавились в "Main", старые также не обновляются)
-Ответ: "Already up-to-date."
+$ git checkout main
+$ git merge Bug_Reports
 
 6. Запушить main на внешний репозиторий.
-(для проверки добавила файл вручную).
-$ git add .
-$ git commit -am "new files"
 $ git push
 
 7. В ветке CheckLists набросать структуру чек листа.
@@ -75,22 +71,21 @@ control panel
 password
 data
 menu
-drop-down mwnu
+drop-down menu
 
 (ctrl+c)
 8. Запушить структуру на внешний репозиторий
-$ git add checklist_1.txt
-$ git commit -am "new checklist"
-$ git push -u origin CheckLists
+$ git add checklist_1.tx
+$ git commit -m "new file checklist_1.txt"
+$ git push
 
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
 ===
-base: "name" <- compare: "name"
-https://prnt.sc/26eqfo2
-https://prnt.sc/26eqhh9
-https://prnt.sc/26eqigo
+base: "main" <- compare: "CheckList"
+https://prnt.sc/26eugeu
+https://prnt.sc/26eugsh
 
 10. Синхронизировать Внешнюю и Локальную ветки Main
 ===
 $ git checkout main
-$ git pull https://github.com/VKoltsova/QA.git
+$ git pull https://github.com/VKoltsova/QA.git (или "git pull" просто)
