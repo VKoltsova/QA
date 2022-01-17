@@ -8,5 +8,5 @@ control panel
 password
 data
 menu
-drop-down mwnu
+drop-down menu
 
