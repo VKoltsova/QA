@@ -7,6 +7,7 @@ GitHub. HW_2
 - SQL
 - Charles
 - Mobile testing
+
 === каждую ветку создаем командой git branch name_branch
 $ git branch Postman
 $ git branch Jmeter
@@ -49,9 +50,47 @@ $git commit -am "new structure"
 $ git push -u origin Bag_Reports
 
 5. Вмержить ветку Bag Reports в Main
+===
+$ git merge main
+(но новые файлы из ветки "Bag Reports" не добавились в "Main", старые также не обновляются)
+Ответ: "Already up-to-date."
 
 6. Запушить main на внешний репозиторий.
+(для проверки добавила файл вручную).
+$ git add .
+$ git commit -am "new files"
+$ git push
+
 7. В ветке CheckLists набросать структуру чек листа.
+===
+$ git checkout CheckLists
+$ cat > checklist_1.txt
+account
+aithorization
+authentification
+boot
+build
+content
+control panel
+password
+data
+menu
+drop-down mwnu
+
+(ctrl+c)
 8. Запушить структуру на внешний репозиторий
+$ git add checklist_1.txt
+$ git commit -am "new checklist"
+$ git push -u origin CheckLists
+
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+===
+base: "name" <- compare: "name"
+https://prnt.sc/26eqfo2
+https://prnt.sc/26eqhh9
+https://prnt.sc/26eqigo
+
 10. Синхронизировать Внешнюю и Локальную ветки Main
+===
+$ git checkout main
+$ git pull https://github.com/VKoltsova/QA.git
