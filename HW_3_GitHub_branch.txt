@@ -1,5 +1,5 @@
 GitHub. HW_2
-1. На локальном репозитории сделать ветки для:
+1. РќР° Р»РѕРєР°Р»СЊРЅРѕРј СЂРµРїРѕР·РёС‚РѕСЂРёРё СЃРґРµР»Р°С‚СЊ РІРµС‚РєРё РґР»СЏ:
 - Postman
 - Jmeter
 - CheckLists
@@ -8,20 +8,20 @@ GitHub. HW_2
 - Charles
 - Mobile testing
 
-=== каждую ветку создаем командой git branch name_branch
+=== РєР°Р¶РґСѓСЋ РІРµС‚РєСѓ СЃРѕР·РґР°РµРј РєРѕРјР°РЅРґРѕР№ git branch name_branch
 $ git branch Postman
 $ git branch Jmeter
 $ git branch CheckLists
-$ git branch Bag_Reports (с пробелом нельзя)
+$ git branch Bag_Reports (СЃ РїСЂРѕР±РµР»РѕРј РЅРµР»СЊР·СЏ)
 $ git branch SQL
 $ git branch Charles
-$ git branch Mobile_testing (с пробелом нельзя)
+$ git branch Mobile_testing (СЃ РїСЂРѕР±РµР»РѕРј РЅРµР»СЊР·СЏ)
 
-2. Запушить все ветки на внешний репозиторий
+2. Р—Р°РїСѓС€РёС‚СЊ РІСЃРµ РІРµС‚РєРё РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 ===
 $ git push --all
 
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+3. Р’ РІРµС‚РєРµ Bag Reports СЃРґРµР»Р°С‚СЊ С‚РµРєСЃС‚РѕРІС‹Р№ РґРѕРєСѓРјРµРЅС‚ СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂРѕР№ Р±Р°Рі СЂРµРїРѕСЂС‚Р°
 ===
 $ git checkout Bag_Reports
 touch bag_report.txt
@@ -43,25 +43,25 @@ Tester
 Additional information
 Sprint
 (ctrl+c, :wq)
-4. Запушить структуру багрепорта на внешний репозиторий
+4. Р—Р°РїСѓС€РёС‚СЊ СЃС‚СЂСѓРєС‚СѓСЂСѓ Р±Р°РіСЂРµРїРѕСЂС‚Р° РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 ===
 $git add bag_report.txt
 $git commit -am "new structure"
 $ git push -u origin Bag_Reports
 
-5. Вмержить ветку Bag Reports в Main
+5. Р’РјРµСЂР¶РёС‚СЊ РІРµС‚РєСѓ Bag Reports РІ Main
 ===
 $ git merge main
-(но новые файлы из ветки "Bag Reports" не добавились в "Main", старые также не обновляются)
-Ответ: "Already up-to-date."
+(РЅРѕ РЅРѕРІС‹Рµ С„Р°Р№Р»С‹ РёР· РІРµС‚РєРё "Bag Reports" РЅРµ РґРѕР±Р°РІРёР»РёСЃСЊ РІ "Main", СЃС‚Р°СЂС‹Рµ С‚Р°РєР¶Рµ РЅРµ РѕР±РЅРѕРІР»СЏСЋС‚СЃСЏ)
+РћС‚РІРµС‚: "Already up-to-date."
 
-6. Запушить main на внешний репозиторий.
-(для проверки добавила файл вручную).
+6. Р—Р°РїСѓС€РёС‚СЊ main РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№.
+(РґР»СЏ РїСЂРѕРІРµСЂРєРё РґРѕР±Р°РІРёР»Р° С„Р°Р№Р» РІСЂСѓС‡РЅСѓСЋ).
 $ git add .
 $ git commit -am "new files"
 $ git push
 
-7. В ветке CheckLists набросать структуру чек листа.
+7. Р’ РІРµС‚РєРµ CheckLists РЅР°Р±СЂРѕСЃР°С‚СЊ СЃС‚СЂСѓРєС‚СѓСЂСѓ С‡РµРє Р»РёСЃС‚Р°.
 ===
 $ git checkout CheckLists
 $ cat > checklist_1.txt
@@ -78,19 +78,19 @@ menu
 drop-down mwnu
 
 (ctrl+c)
-8. Запушить структуру на внешний репозиторий
+8. Р—Р°РїСѓС€РёС‚СЊ СЃС‚СЂСѓРєС‚СѓСЂСѓ РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 $ git add checklist_1.txt
 $ git commit -am "new checklist"
 $ git push -u origin CheckLists
 
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+9. РќР° РІРЅРµС€РЅРµРј СЂРµРїРѕР·РёС‚РѕСЂРёРё СЃРґРµР»Р°С‚СЊ Pull Request РІРµС‚РєРё CheckLists РІ main
 ===
 base: "name" <- compare: "name"
 https://prnt.sc/26eqfo2
 https://prnt.sc/26eqhh9
 https://prnt.sc/26eqigo
 
-10. Синхронизировать Внешнюю и Локальную ветки Main
+10. РЎРёРЅС…СЂРѕРЅРёР·РёСЂРѕРІР°С‚СЊ Р’РЅРµС€РЅСЋСЋ Рё Р›РѕРєР°Р»СЊРЅСѓСЋ РІРµС‚РєРё Main
 ===
 $ git checkout main
 $ git pull https://github.com/VKoltsova/QA.git
